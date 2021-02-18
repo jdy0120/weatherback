@@ -70,8 +70,6 @@ app.get('/',(req,res) => {
         }
         await getApi()
         if (data.cod == 200) { // 검색이 가능할 경우
-
-                   
             
             var sql = 'insert into json_weather(w_data) values(\'' + JSON.stringify(data) + '\')'
 
